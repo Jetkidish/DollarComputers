@@ -12,3 +12,6 @@ D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarCompu
 D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\bin\Debug\EntityFramework.SqlServer.xml
 D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.SelectForm.resources
 D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.StartForm.resources
+D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.csprojResolveAssemblyReference.cache
+D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.OrderForm.resources
+D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.ProductInfoForm.resources

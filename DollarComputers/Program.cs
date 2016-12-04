@@ -8,6 +8,8 @@ namespace DollarComputers
 {
     static class Program
     {
+        //selection array stores the information on the users selection, which is 31 fields (IIRC)
+        public static string[] selection = new string[31];
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

@@ -35,11 +35,10 @@ namespace DollarComputers
         {
             foreach (DataGridViewRow row in ProductDataGridView.SelectedRows)
             {
-                string[] data = new string[31];
                 for (int c = 0; c < 31; c++){
-                    data[c] = row.Cells[c].Value.ToString();
+                    Program.selection[c] = row.Cells[c].Value.ToString();
                 }
-                SelectionTextBox.Text = data[2] + " " + data[3] + " " + data[1];
+                SelectionTextBox.Text = Program.selection[2] + " " + Program.selection[3] + " Priced at: " + Program.selection[1];
                 
             }
             NextButton.Enabled = true;
