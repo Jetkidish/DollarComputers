@@ -69,5 +69,15 @@ namespace DollarComputers.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m1160079_111134_rev_388 {
+            get {
+                object obj = ResourceManager.GetObject("m1160079_111134_rev_388", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

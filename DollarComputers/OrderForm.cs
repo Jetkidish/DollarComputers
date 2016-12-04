@@ -16,5 +16,14 @@ namespace DollarComputers
         {
             InitializeComponent();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Step 1 - instantiate an object of the AboutBox form
+           // AboutBox aboutBox = new AboutBox();
+
+            // Step 2 - use the ShowDialog method of the aboutbox
+            //aboutBox.ShowDialog();
+        }
     }
 }

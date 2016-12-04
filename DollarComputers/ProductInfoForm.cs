@@ -16,5 +16,34 @@ namespace DollarComputers
         {
             InitializeComponent();
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            OrderForm orderForm = new DollarComputers.OrderForm();
+            orderForm.Show();
+            this.Hide();
+        }
+
+        private void selecAnotherProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectForm selectForm = new DollarComputers.SelectForm();
+            selectForm.Show();
+            this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

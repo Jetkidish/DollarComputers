@@ -67,9 +67,13 @@
             // 
             // StartPictureBox
             // 
+            this.StartPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.StartPictureBox.Image = global::DollarComputers.Properties.Resources.m1160079_111134_rev_388;
+            this.StartPictureBox.InitialImage = global::DollarComputers.Properties.Resources.m1160079_111134_rev_388;
             this.StartPictureBox.Location = new System.Drawing.Point(49, 12);
             this.StartPictureBox.Name = "StartPictureBox";
             this.StartPictureBox.Size = new System.Drawing.Size(130, 140);
+            this.StartPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.StartPictureBox.TabIndex = 3;
             this.StartPictureBox.TabStop = false;
             // 
