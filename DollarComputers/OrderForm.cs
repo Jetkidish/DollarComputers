@@ -25,5 +25,20 @@ namespace DollarComputers
             // Step 2 - use the ShowDialog method of the aboutbox
             //aboutBox.ShowDialog();
         }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FinishButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
