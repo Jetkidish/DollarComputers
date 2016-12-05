@@ -10,6 +10,8 @@ namespace DollarComputers
     {
         //selection array stores the information on the users selection, which is 31 fields (IIRC)
         public static string[] selection = new string[31];
+        //flag for showing open dialog
+        public static int flag;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

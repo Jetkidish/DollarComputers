@@ -14,3 +14,4 @@ D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarCompu
 D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.StartForm.resources
 D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.OrderForm.resources
 D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.ProductInfoForm.resources
+D:\Users\Devon\Documents\Visual Studio 2015\Projects\DollarComputers\DollarComputers\obj\Debug\DollarComputers.AboutBox.resources

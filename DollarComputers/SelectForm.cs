@@ -17,7 +17,12 @@ namespace DollarComputers
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// SelectForm_Load event handler
+        /// This will load and fill the table
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
@@ -25,11 +30,22 @@ namespace DollarComputers
 
 
         }
-
+        /// <summary>
+        /// CancelButton_Click event handler
+        /// This exits the app
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        /// <summary>
+        /// ProductDataGridView_CellContentClick event handler
+        /// This handles a user click in the box, and also enables the next button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void ProductDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -44,7 +60,12 @@ namespace DollarComputers
             NextButton.Enabled = true;
 
         }
-
+        /// <summary>
+        /// NExtButton_Click event handler
+        /// this will show the next form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             ProductInfoForm productInfoForm = new DollarComputers.ProductInfoForm();

@@ -18,6 +18,10 @@ namespace DollarComputers
             InitializeComponent();
             this.ProductSelectionForm_Load();
         }
+        /// <summary>
+        /// ProgramSelectionForm_Load event handler
+        /// This populates the textboxes, and checks the flag status
+        /// </summary>
         private void ProductSelectionForm_Load()
         {
             ModelTextBox.Text = Program.selection[3];
@@ -36,28 +40,53 @@ namespace DollarComputers
             ProductIDTextBox.Text = Program.selection[0];
             ConditionTextBox.Text = Program.selection[14];
             CostTextBox.Text = Program.selection[1];
+            while (Program.flag == 1)
+            {
+                Program.flag = 0;
+                openToolStripMenuItem.PerformClick(); 
+            }
 
         }
-
+        /// <summary>
+        /// NextButton_Click Event handler
+        /// this handles the next button, and shows the next form if clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             OrderForm orderForm = new DollarComputers.OrderForm();
             orderForm.Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// selecAnotherProductToolStripMenuItem_Click event handler
+        /// this will take the user back to the selection form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void selecAnotherProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SelectForm selectForm = new DollarComputers.SelectForm();
             selectForm.Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// exitToolStripMenuItem_Click event handler
+        /// This exits the app
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// openToolStripMenuItemClick
+        /// This will open a dialog box allowing the user to open a saved order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult responseDialogResult;
@@ -79,7 +108,12 @@ namespace DollarComputers
                 reader.Close();
             }
         }
-
+        /// <summary>
+        /// saveToolStripMenuItem_Click
+        /// This will allow the user to save their current order details in a text file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult saveResponseDialogResult;
