@@ -22,6 +22,7 @@ namespace DollarComputers
             SelectForm selectForm = new DollarComputers.SelectForm();
             selectForm.Show();
             this.Hide();
+            
         }
 
         private void OpenSavedOrderButton_Click(object sender, EventArgs e)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,12 +60,42 @@ namespace DollarComputers
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DialogResult responseDialogResult;
+            openFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            responseDialogResult = openFileDialog.ShowDialog();
+            if (responseDialogResult != DialogResult.Cancel)
+            {
+                StreamReader reader = new StreamReader(openFileDialog.FileName);
 
+                while (reader.Peek() != -1)
+                {
+                    for (int counter = 0; counter < 31; counter++)
+                    {
+                        Program.selection[counter] = reader.ReadLine();
+                    }
+                    this.ProductSelectionForm_Load();
+                }
+
+                reader.Close();
+            }
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DialogResult saveResponseDialogResult;
+            saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            saveResponseDialogResult = saveFileDialog.ShowDialog();
+            if (saveResponseDialogResult != DialogResult.Cancel)
+            {
+                StreamWriter writer = new StreamWriter(saveFileDialog.FileName);
 
+                for (int counter = 0; counter < 31; counter++)
+                {
+                    writer.WriteLine(Program.selection[counter]);
+                }
+
+                writer.Close();
+            }
         }
     }
 }
